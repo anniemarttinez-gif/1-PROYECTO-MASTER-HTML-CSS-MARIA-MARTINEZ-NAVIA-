@@ -1,0 +1,109 @@
+
+:root {
+    --negro-sombras: #1a1a1a;
+    --dorado-dragón: #f48ed0;
+    --gris-cuero: #692a2a;
+    --blanco-hueso: #f5f5f5;
+}
+
+
+
+.hero {
+
+    text-align: center;
+    padding: 50px;
+    }
+
+  .foto-perfil{
+    display: flex;
+    margin: 20px auto;
+    width: 300px;
+    border: 5px solid #f48ed0
+
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--negro-sombras);
+    color: var(--blanco-hueso);
+}
+
+
+header {
+    background-color: #000;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--dorado-dragón);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--blanco-hueso);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.hero {
+    background: linear-gradient(rgba(78, 41, 41, 0.7), rgba(0,0,0,0.7)), 
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.proyecto {
+    background-color: var(--gris-cuero);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--dorado-dragón);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--dorado-dragón);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #000;
+    color: var(--blanco-hueso);
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid var(--dorado-dragón);
+}
